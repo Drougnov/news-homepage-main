@@ -8,81 +8,84 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-  <nav>
-    <img src="./assets/images/logo.svg" alt="Home | News homepage" class="nav__logo">
-    <div class="nav__menu">
-      <div class="hamburger"></div>
-    </div>
-    <ul class="nav__list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">New</a></li>
-      <li><a href="#">Popular</a></li>
-      <li><a href="#">Trending</a></li>
-      <li><a href="#">Categories</a></li>
-    </ul>
-  </nav>
-  <main>
-    <div class="top">
-      <div class="heading">
-        <picture>
-          <source media="(min-width: 650px)" srcset="./assets/images/image-web-3-desktop.jpg">
-          <img src="./assets/images/image-web-3-mobile.jpg" alt="">
-        </picture>
-        <section class="heading--text">
-          <h1>The Bright Future of Web 3.0?</h1>
-          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-            But is it really fulfilling its promise?</p>
-          <a href="#">Read more</a>
+  <div class="container">
+    <nav>
+      <img src="./assets/images/logo.svg" alt="Home | News homepage" class="nav__logo">
+      <div class="nav__menu">
+        <div class="hamburger"></div>
+      </div>
+      <ul class="nav__list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="top">
+        <div class="top__heading">
+          <picture>
+            <source media="(min-width: 650px)" srcset="./assets/images/image-web-3-desktop.jpg">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="top__heading--img">
+          </picture>
+          <section class="top__heading--text">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            <a href="#">Read more</a>
+          </section>
+        </div>
+        <section class="top__new">
+          <h2>New</h2>
+          <section class="top__new--text">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </section>
+          <hr>
+          <section class="top__new--text">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </section>
+          <hr>
+          <section class="top__new--text">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </section>
         </section>
       </div>
-      <section class="new">
-        <h2>New</h2>
-        <section>
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </section>
-        <hr>
-        <section>
-          <h3>The Downsides of AI Artistry</h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </section>
-        <hr>
-        <section>
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </section>
-      </section>
-    </div>
-    <div class="bottom">
-      <div>
-        <img src="./assets/images/image-retro-pcs.jpg" alt="retor pc">
-        <secction>
-          <h2>01</h2>
-          <a href="#">Reviving Retro PCs</a>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </secction>
+      <div class="bottom">
+        <div>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="retor pc">
+          <secction>
+            <h2>01</h2>
+            <a href="#">Reviving Retro PCs</a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </secction>
+        </div>
+        <div>
+          <img src="./assets/images/" alt="">
+          <secction>
+            <h2>02</h2>
+            <a href="#">Top 10 Laptops of 2022</a>
+            <p>Our best picks for various needs and budgets.</p>
+          </secction>
+        </div>
+        <div>
+          <img src="./assets/images/" alt="">
+          <secction>
+            <h2>03</h2>
+            <a href="#">The Growth of Gaming</a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </secction>
+        </div>
       </div>
-      <div>
-        <img src="./assets/images/" alt="">
-        <secction>
-          <h2>02</h2>
-          <a href="#">Top 10 Laptops of 2022</a>
-          <p>Our best picks for various needs and budgets.</p>
-        </secction>
-      </div>
-      <div>
-        <img src="./assets/images/" alt="">
-        <secction>
-          <h2>03</h2>
-          <a href="#">The Growth of Gaming</a>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </secction>
-      </div>
-    </div>
-  </main>
+    </main>
+  </div>
   <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
     Coded by <a href="https://www.facebook.com/ANT1D0t35" target="_blank" rel="noopener">Rocky</a>.
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
