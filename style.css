@@ -144,6 +144,14 @@ body{
     color: var(--dark-blue);
     font-size: 18px;
     text-decoration: none;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.nav__list li a:hover{
+    color: var(--soft-orange);
 }
 nav.active .nav__list{
     transform: translateX(0);
@@ -202,6 +210,14 @@ main .top{
     text-transform: uppercase;
     padding: 1rem 2rem;
     margin-top: 1.5rem;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.top__heading--text a:hover{
+    background: var(--dark-blue);
 }
 .top__new{
     color: var(--grayish-blue);
@@ -220,6 +236,14 @@ main .top{
     font-weight: 700;
     text-decoration: none;
     margin-bottom: .75rem;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.top__new--text a:hover{
+    color: var(--soft-orange);
 }
 .top__new hr{
     display: block;
@@ -251,6 +275,14 @@ main .bottom{
     font-weight: 800;
     text-decoration: none;
     margin: .75rem 0;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.bottom__block--text a:hover{
+    color: var(--soft-red);
 }
 footer{
     text-align: center;
