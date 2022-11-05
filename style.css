@@ -43,6 +43,8 @@ body{
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
+    z-index: 0;
+    pointer-events: none;
 }
 .container.active .overlay{
     background: rgba(0, 0, 0, 0.5);
@@ -226,7 +228,7 @@ main .top{
     border-top: 1px solid var(--dark-grayish-blue);
     margin: 1.5rem 0;
 }
-.bottom{
+main .bottom{
     display: grid;
     gap: 2rem;
     margin-top: 5rem;
@@ -250,9 +252,82 @@ main .top{
     text-decoration: none;
     margin: .75rem 0;
 }
+footer{
+    text-align: center;
+    margin-bottom: 1rem;
+}
 footer a{
     color: var(--soft-red);
 }
 footer a:hover{
     text-decoration: none;
+}
+@media(min-width: 850px){
+    .container{
+        padding: 1.5rem 3rem;
+    }
+    .nav__logo{
+        max-width: 100%;
+    }
+    .nav__menu{
+        display: none;
+    }
+    .nav__list{
+        position: unset;
+        width: max-content;
+        flex-direction: row;
+        padding-top: 0;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    main .top{
+        grid-template-columns: auto auto;
+    }
+}
+@media(min-width: 1200px){
+    body{
+        font-size: 16px;
+    }
+    .container{
+        padding: 3rem 7rem;
+    }
+    .nav__list{
+        gap: 2.5rem;
+    }
+    main .top{
+        grid-template-columns: 2fr 1fr;
+    }
+    .top__heading--text{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: end;
+        gap: 2rem;
+    }
+    .top__heading--text h1{
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: .5rem;
+    }
+    .top__heading--text div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top__heading--text a{
+        margin-top: 2rem;
+    }
+    .top__new{
+        padding: 1.5rem;
+    }
+    .top__new h2{
+        font-size: 2.5rem;
+    }
+    main .bottom{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
 }
