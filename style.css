@@ -19,6 +19,7 @@ p{
 body{
     min-height: 100vh;
     color: var(--dark-grayish-blue);
+    background: var(--off-white);
     font-size: 15px;
     font-family: 'Inter', sans-serif;
     display: flex;
